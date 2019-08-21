@@ -29,4 +29,19 @@
 - 添加sass的postcss-loader 创建一个postcss.config.js文件指定自动补全插件
 
 ## sourcemap文件配置
+- webpack中devtool配置 开发环境和生产环境配置不同
 
+## 添加lint规范代码
+- 安装eslint-loader eslint eslint-plugin-jsx-a11y eslint-plugin-import eslint-plugin-react-hooks
+- 创建.eslintrc文件
+- 可以引入常用的标准 eslint-config-airbnb
+- 自动规范代码 npm脚本 eslint pathname --fix
+- 执行eslint可能会遇见报错 
+```
+error: JSX not allowed in files with extension '.js'  react/jsx-filename-extension
+way：添加。eslintrc配置rules允许.js和.jsx
+"rules": {
+  "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+}
+```
+- 自动格式化代码 安装eslint-plugin-prettier

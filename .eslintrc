@@ -1,0 +1,15 @@
+{
+    "parser": "babel-eslint", //指定es6解析器
+    "env": {
+        "browser": true,
+        "es6": true,
+        "amd": true,
+        "node": true
+    },
+    "extends": "airbnb",
+    "plugins": ["react","prettier"],
+    "rules": {
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        
+    }
+}
