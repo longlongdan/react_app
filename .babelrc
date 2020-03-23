@@ -1,0 +1,10 @@
+{
+    "presets": [], //预设
+    
+    "env": {
+        "development": {
+            "presets": ["react-hmre"]
+        }
+    },
+    "plugins": ["syntax-dynamic-import"] //插件
+}

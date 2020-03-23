@@ -1,11 +1,9 @@
 import React from 'react';
 
-const App = () => {
-  console.log(222);
-  return (
-    <div>
+
+const App = () => (
+  <div>
                 首页
-    </div>
-  );
-};
+  </div>
+);
 export default App;
